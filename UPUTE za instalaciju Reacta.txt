@@ -1,0 +1,44 @@
+UPUTE ZA INSTALACIJU REACT-A:
+
+A: Instaliraj node.js na Windows-u (preskoči ako imaš instaliran):
+
+1.    Posjetite https://nodejs.org/en/download/ i preuzmite odgovarajuću verziju Node.js za vaš operativni sustav.
+
+2.    Nakon preuzimanja, instalirajte Node.js prema uputama koje se pojavljuju na zaslonu.
+
+3.    Provjerite je li Node.js ispravno instaliran otvaranjem terminala i upisivanjem naredbe node -v. Ako se pojavi brojčana verzija Node.js-a, instalacija je uspješna.
+
+4.    Nakon što je Node.js uspješno instaliran, morate dodati putanju do Node.js-a u vaš PATH. Putanja do Node.js-a obično izgleda ovako: C:\Program Files\nodejs. Međutim, to se može razlikovati ovisno o verziji i lokaciji instalacije.
+
+5.    Da biste dodali Node.js u vaš PATH, slijedite ove korake ovisno o vašem operativnom sustavu:
+
+        - Windows: Otvorite "Sustavsku svojstva" > "Napredno" > "Varijable okruženja". Pod "Varijabla sustava" pronađite "Path" i kliknite na "Uredi". Kliknite na "Novo" i upišite putanju do Node.js-a. Na primjer, C:\Program Files\nodejs. Zatim kliknite "U redu" sve dok ne zatvorite sve prozore.
+
+        - MacOS ili Linux: U terminalu upišite naredbu export PATH=$PATH:/usr/local/bin/node (izmijenite putanju ako se Node.js nalazi na drugoj lokaciji).
+
+6.    Provjerite je li Node.js ispravno dodan u vaš PATH tako da u terminalu upišete naredbu node -v. Ako se pojavi brojčana verzija Node.js-a, instalacija i dodavanje u PATH su uspješni.
+
+7. Nakon što ste instalirali Node.js i dodali ga u vaš PATH, trebali biste moći koristiti naredbe poput npx bez problema.
+
+
+
+********************
+
+B: Generiranje React Projekta (na folderu unutar kojega ga želiš generirati - klikni na folder projekta u visual studio codu desnim klikom i odaberi 'Open in integrated terminal):
+
+ npx create-react-app my-first-app
+
+
+
+C: Pokretanje projekta u terminalu:
+
+- Pokreni terminal na tom sada generiranom folderu (desni klik na folder i pokreni u terminalu)
+
+- npm start  (pokretanje generiranog projekta)
+
+- npm run build (izgradnja build folder strukture - Babel dođe unutra - bitno za JSX upotrebu/prevod koda)
+
+
+5. SADRŽAJ REACT-a: 
+
+*Možeš pobrisati sve u src i public folderima osim index.html (public) i index.js (src). Izvan foldera ostavi sve kako jest. Samo podesi u index.js importe - provjeri jeli ti putanja OK.
